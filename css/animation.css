@@ -1,0 +1,42 @@
+/*  */
+/* ---------------------    animation svg-btn */
+/*  */
+@keyframes anim-line {
+    to {
+        stroke-dashoffset: 0px;
+        fill: #fff;
+    }
+}
+
+.booking__item-anim-1,
+.booking__item-anim-2,
+.booking__item-anim-3,
+.booking__item-anim-4,
+.booking__item-anim-5,
+.booking__item-anim-6 {
+    will-change: transform;
+}
+
+/* 
+    Анимация для появления текста
+*/
+
+.why__anim-text {
+    perspective: 600px;
+    -webkit-perspective: 600px;
+}
+
+.why .letter {
+    /* transition: transform 1s ease 2s; */
+    will-change: transform;
+}
+
+@keyframes why-text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) rotate(0) scale(1);
+    }
+}
